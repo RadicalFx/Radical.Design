@@ -60,6 +60,10 @@
     <DocumentationFile>bin\Release\Radical.Design.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Radical, Version=1.5.2.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Radical.1.5.2.1\lib\net35\Radical.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -68,9 +72,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\lib\Radical.AssemblyInfo.cs">
-      <Link>Properties\Radical.AssemblyInfo.cs</Link>
-    </Compile>
     <Compile Include="Design Time Properties\DynamicDesignTimeProperty.cs" />
     <Compile Include="Design Time Properties\DesignTimeProperty %28Generic%29.cs" />
     <Compile Include="Design Time Properties\LiveDesignTimeProperty.cs" />
@@ -88,13 +89,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Radical\Radical.csproj">
-      <Project>{C669FC1F-2AAF-4F22-B557-9C68F69A0B97}</Project>
-      <Name>Radical</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="ClassDiagram.cd" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
