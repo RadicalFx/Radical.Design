@@ -21,13 +21,6 @@ using System.Runtime.InteropServices;
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 [assembly: Guid( "abdef56e-68f1-4243-af9f-a1ea6ab0d898" )]
 
-#pragma warning disable 1607
-//This is the build number userd to publish the NuGet package.
-[assembly: AssemblyInformationalVersion( "NuGet-0.9.6.0" )]
-#pragma warning restore 1607
-
-//This is the real build number used for references
-[assembly: AssemblyVersion( "0.9.6.0" )]
-
-//This build number should always be equal to the used AssemblyVersion, currently is not used.
-[assembly: AssemblyFileVersion( "0.9.6.0" )]
+[assembly: AssemblyVersion( "1.0.0.0" )]
+[assembly: AssemblyFileVersion( "1.0.0.0" )]
+[assembly: AssemblyInformationalVersion("1.0.0.0")]
